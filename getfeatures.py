@@ -11,7 +11,7 @@ ACCESS_TOKEN = ''
 d = {'id':'', 'created_at':'', 'from_user':'', 'followers_count':'', 'friends_count':'', 'statuses_count':'', 'verified':'', 'location':'', 'text':'', 'retweet_count':'', 'favorite_count':'', 'hashtag_count':'', 'url_count':'', 'mentions_count':'', 'links':''}
 
 def getFeatures(filename):
-	csvfile = pd.read_csv(filename) #Reading the .csv files containing tweets.
+	csvfile = pd.read_csv(filename) #Reading .csv files containing tweets.
 	tweet_ids = csvfile['id_str']	#Copying the 'id_str' attribute values to a item.
 	length = len(tweet_ids)			#Getting the length of 'tweet_ids'.
 	
